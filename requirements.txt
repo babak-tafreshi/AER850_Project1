@@ -1,0 +1,16 @@
+
+
+requirements = """\
+pandas==2.2.2
+numpy==1.26.4
+matplotlib==3.8.4
+seaborn==0.13.2
+scikit-learn==1.5.1
+joblib==1.4.2
+"""
+
+# Save the requirements to a text file
+with open("/mnt/data/requirements.txt", "w") as f:
+    f.write(requirements)
+
+"/mnt/data/requirements.txt"
