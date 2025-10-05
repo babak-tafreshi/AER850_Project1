@@ -1,7 +1,7 @@
 
 # Predicting Maintenance Steps Using Machine Learning
 *AER850: Introduction to Machine Learning – Project 1*  
-**Author:** Babak Tafreshi  
+**Author:** Babak Nassir Tafreshi  
 **Institution:** Toronto Metropolitan University  
 
 ---
