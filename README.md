@@ -74,8 +74,8 @@ The **Gradient Boosting model** was saved and deployed for inference, accurately
 git clone https://github.com/babak-tafreshi/AER850--Project1.git
 cd AER850-Project
 
-    git clone https://github.com/babak-tafreshi/AER850--Project1.git 
-    cd AER850-Project
+    git clone https://github.com/babak-tafreshi/AER850-Project1.git 
+    cd AER850-Project1
 
 ### 2. Install Dependencies
 
@@ -83,7 +83,7 @@ cd AER850-Project
 
  3. Run the Project
 
-        python src/project1_main.py
+        python AER850_Project1.ipynb
 
 ### 4. Load and Predict Using the Trained Model
 
