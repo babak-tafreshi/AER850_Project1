@@ -1,3 +1,4 @@
+
 # Predicting Maintenance Steps Using Machine Learning
 *AER850: Introduction to Machine Learning – Project 1*  
 **Author:** Babak Tafreshi  
@@ -50,8 +51,6 @@ The **Gradient Boosting model** was saved and deployed for inference, accurately
 [9.4, 3, 1.8]
 [9.4, 3, 1.3]
 
-yaml
-Copy code
 
 ---
 
@@ -71,52 +70,54 @@ Copy code
 ## Usage Instructions
 
 ### 1. Clone the Repository
-```bash
-git clone https://github.com/<your-username>/AER850-ML-Project.git
-cd AER850-ML-Project
-2. Install Dependencies
-bash
-Copy code
-pip install -r requirements.txt
-3. Run the Project
-bash
-Copy code
-python src/project1_main.py
-4. Load and Predict Using the Trained Model
-python
-Copy code
-from joblib import load
-import numpy as np
 
-model = load("final_gradient_boosting_model.joblib")
+git clone https://github.com/babak-tafreshi/AER850--Project1.git
+cd AER850-Project
 
-coords = np.array([
-    [9.375, 3.0625, 1.51],
-    [6.995, 5.125, 0.3875],
-    [0, 3.0625, 1.93],
-    [9.4, 3, 1.8],
-    [9.4, 3, 1.3]
-])
+    git clone https://github.com/babak-tafreshi/AER850--Project1.git
+cd AER850-Project
 
-print(model.predict(coords))
+### 2. Install Dependencies
+
+    pip install -r requirements.txt
+    3. Run the Project
+
+    python src/project1_main.py
+
+### 4. Load and Predict Using the Trained Model
+
+    from joblib import load
+    import numpy as np
+    
+    model = load("final_gradient_boosting_model.joblib")
+    
+    coords = np.array([
+        [9.375, 3.0625, 1.51],
+        [6.995, 5.125, 0.3875],
+        [0, 3.0625, 1.93],
+        [9.4, 3, 1.8],
+        [9.4, 3, 1.3]
+    ])
+    
+    print(model.predict(coords))
+
 Repository Structure
-css
-Copy code
-AER850-ML-Project/
-│
-├── data/
-│   └── Project1_Data.csv
-│
-├── src/
-│   └── project1_main.py
-│
-├── outputs/
-│   └── figures/
-│
-├── README.md
-└── requirements.txt
-License
-This project is provided for academic and educational purposes under the MIT License.
 
-Acknowledgment
+    │
+    ├── data/
+    │   └── Project1_Data.csv
+    │
+    ├── src/
+    │   └── project1_main.py
+    │
+    ├── outputs/
+    │   └── figures/
+    │
+    ├── README.md
+    └── requirements.txt
+
+## License
+This project is provided for academic and educational purposes under the TMU License.
+
+## Acknowledgment
 Developed as part of AER850: Introduction to Machine Learning at Toronto Metropolitan University (TMU), focusing on the application of Machine Learning in Aerospace Maintenance and AR-based Predictive Systems.
