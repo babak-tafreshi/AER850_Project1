@@ -45,3 +45,77 @@ The **Gradient Boosting Classifier** achieved the best performance with **99.53%
 | Stacked (SVM + RF) | 0.9814 | 0.9827 | 0.9813 |
 
 The **Gradient Boosting model** was packaged for reuse and correctly predicted maintenance steps for new coordinate samples:
+
+[9.375, 3.0625, 1.51], [6.995, 5.125, 0.3875], [0, 3.0625, 1.93], [9.4, 3, 1.8], [9.4, 3, 1.3]
+
+
+---
+
+## 🧠 Key Insights  
+- The **X-coordinate** showed the strongest correlation with the maintenance step (r ≈ 0.82).  
+- 3D visualization revealed distinct clusters for each step, confirming data separability.  
+- Stacking models showed minimal gain since Gradient Boosting already achieved near-perfect accuracy.  
+
+---
+
+## 🧩 Technologies Used  
+- **Python 3.10+**  
+- **Libraries:**  
+  `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `joblib`
+
+---
+
+## 💻 Usage Instructions  
+
+### 1️⃣ Clone the repository  
+```bash
+git clone https://github.com/<your-username>/AER850-ML-Project.git
+cd AER850-ML-Project
+
+
+INSTALL DEPENDENCIES:
+
+pip install -r requirements.txt
+
+
+
+from joblib import load
+import numpy as np
+
+model = load("final_gradient_boosting_model.joblib")
+coords = np.array([
+    [9.375,3.0625,1.51],
+    [6.995,5.125,0.3875],
+    [0,3.0625,1.93],
+    [9.4,3,1.8],
+    [9.4,3,1.3]
+])
+print(model.predict(coords))
+
+
+python project1_main.py
+
+
+
+Repository structure:
+├── data/
+│   └── Project1_Data.csv
+├── src/
+│   ├── project1_main.py
+├── outputs/
+│   └── figures/
+├── README.md
+└── requirements.txt
+
+
+ License
+
+This project is provided for academic and educational purposes under the MIT License
+
+
+Acknowledgment
+
+Developed as part of AER850: Introduction to Machine Learning at Toronto Metropolitan University (TMU),
+focusing on applications of Machine Learning in Aerospace Maintenance and AR-based Predictive Systems.
+.
+
