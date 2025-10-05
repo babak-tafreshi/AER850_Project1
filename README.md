@@ -105,15 +105,8 @@ cd AER850-Project
 Repository Structure
 
     │
-    ├── data/
-    │   └── Project1_Data.csv
-    │
-    ├── src/
-    │   └── project1_main.py
-    │
-    ├── outputs/
-    │   └── figures/
-    │
+    | Project1_Data.csv
+    ├ AER850_Project1.ipynb
     ├── README.md
     └── requirements.txt
 
