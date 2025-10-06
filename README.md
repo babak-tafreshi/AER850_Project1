@@ -71,7 +71,7 @@ The **Gradient Boosting model** was saved and deployed for inference, accurately
 
 ### 1. Clone the Repository
 
-git clone https://github.com/babak-tafreshi/AER850--Project1.git
+git clone https://github.com/babak-tafreshi/AER850-Project1.git
 cd AER850-Project
 
     git clone https://github.com/babak-tafreshi/AER850-Project1.git 
